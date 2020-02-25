@@ -9,6 +9,7 @@ an automated testing assignment! file 2/2
 import unittest
 import task
 import math
+import datetime
 
 
 class TestCase(unittest.TestCase):
@@ -48,3 +49,18 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected2, task.listFirstLast(list2))
         self.assertEqual(expected3, task.listFirstLast(list3))
         self.assertEqual(expected4, task.listFirstLast(list4))
+
+
+    def testDates(self):
+        date1 = datetime.date(2000, 12, 30)
+        date2 = datetime.date(2000, 12, 31)
+        date3 = datetime.date(2001, 12, 31)
+        date4 = datetime.date(2000, 11, 30)
+
+        expected1 = datetime.timedelta(1)
+        expected2 = datetime.timedelta(365)
+        expected3 = datetime.timedelta(30)
+
+        self.assertEqual(task.dateCalc(date2, date1), expected1)
+        self.assertEqual(task.dateCalc(date3, date2), expected2)
+        self.assertEqual(task.dateCalc(date1, date4), expected3)

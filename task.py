@@ -7,6 +7,7 @@ an automated testing assignment! file 1/2
 """
 
 import math
+import datetime
 
 
 def firstrun():
@@ -24,3 +25,7 @@ def listFirstLast(input_list):
     return_list.append(input_list[0])
     return_list.append(input_list[-1])
     return return_list
+
+
+def dateCalc(date1, date2):
+    return date1 - date2
