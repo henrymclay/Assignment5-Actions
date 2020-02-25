@@ -34,15 +34,15 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected0, task.circleArea(0))
 
     def testList(self):
-        list1 = [1,2]
-        list2 = [1,2,3]
+        list1 = [1, 2]
+        list2 = [1, 2, 3]
         list3 = [3]
-        list4 = [1,2,3,4]
+        list4 = [1, 2, 3, 4]
 
-        expected1 = [1,2]
-        expected2 = [1,3]
-        expected3 = [3,3]
-        expected4 = [1,4]
+        expected1 = [1, 2]
+        expected2 = [1, 3]
+        expected3 = [3, 3]
+        expected4 = [1, 4]
 
         self.assertEqual(expected1, task.listFirstLast(list1))
         self.assertEqual(expected2, task.listFirstLast(list2))
