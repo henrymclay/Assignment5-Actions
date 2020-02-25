@@ -7,7 +7,6 @@ an automated testing assignment! file 1/2
 """
 
 import math
-import datetime
 
 
 def firstrun():

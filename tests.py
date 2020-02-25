@@ -50,7 +50,6 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected3, task.listFirstLast(list3))
         self.assertEqual(expected4, task.listFirstLast(list4))
 
-
     def testDates(self):
         date1 = datetime.date(2000, 12, 30)
         date2 = datetime.date(2000, 12, 31)
